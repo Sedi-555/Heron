@@ -60,6 +60,9 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: var(--pr
 .team-member img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem; object-fit: cover; }
 .role { color: var(--secondary); font-weight: 600; }
 
+.fullwidth-image { margin: 80px 0; }
+.fullwidth-image img { display: block; }
+
 /* Contact Form */
 .contact-info { margin-bottom: 2rem; font-size: 1.1rem; }
 .contact-info p { margin-bottom: 0.5rem; }
@@ -77,4 +80,5 @@ footer { background: var(--text); color: var(--white); text-align: center; paddi
   .nav-links li { margin: 0.5rem 0; }
   .mobile-toggle { display: block; }
   .hero h1 { font-size: 2rem; }
+
 }
