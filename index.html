@@ -9,14 +9,16 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+ <body>
   <!-- Header -->
   <header>
     <div class="container">
-      <nav class="nav">
-        <div class="logo">
-          <img src="logo.png" alt="Heron Transportation & Logistics" class="logo-img">
-        </div>
+      <nav class="nav" aria-label="Main Navigation">
+        <a href="#" class="logo">
+          <img src="logo.jpg" alt="Heron Transportation & Logistics Logo" class="logo-img" loading="lazy">
+        </a>
+
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -24,23 +26,25 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="mobile-toggle">
+
+        <button class="mobile-toggle" aria-label="Toggle Menu">
           <i class="fas fa-bars"></i>
-        </div>
+        </button>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
+    <img src="hero-truck.png" alt="Scania Truck" class="hero-img" loading="eager">
+
     <div class="hero-overlay">
       <div class="container">
         <h1>Heron Transportation & Logistics</h1>
-        <p>Delivering efficiency, reliability, and trust across Botswana and Southern Africa. Founded in 2025, we move goods safely with a modern Scania G640 fleet.</p>
+        <p>Delivering efficiency, reliability, and trust across Botswana and Southern Africa.</p>
         <a href="#contact" class="btn-primary">Get a Quote</a>
       </div>
     </div>
-    <img src="hero-truck.jpg" alt="Scania truck on Botswana road" class="hero-img">
   </section>
 
   <!-- About Section -->
@@ -48,110 +52,110 @@
     <div class="container">
       <h2>About Heron</h2>
       <p>Heron Transportation & Logistics (Pty) Ltd | Registration Number: BW00009270828</p>
-      <p>Heron Transportation & Logistics (Pty) Ltd is a Botswana-registered company dedicated to providing efficient, reliable, and professional transportation and logistics services across Botswana and the Southern African region.</p>
-      <p>Founded in 2025, Heron was established to address the growing need for safe, timely, and transparent freight movement. The company is currently building its foundation with a modern fleet, starting with a Scania G640 truck configured for long-haul and local logistics operations.</p>
+      <p>We provide efficient and reliable logistics services across Botswana and Southern Africa.</p>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section id="services" class="services">
     <div class="container">
       <h2>Our Services</h2>
+
       <div class="services-grid">
-        <div class="service-card">
+        <article class="service-card">
           <i class="fas fa-truck"></i>
-          <h3>Freight & Cargo Transportation</h3>
+          <h3>Freight Transportation</h3>
           <ul>
-            <li>General goods haulage (local and cross-border).</li>
-            <li>Distribution of raw materials and finished products.</li>
+            <li>Local & cross-border haulage</li>
+            <li>Distribution of goods & materials</li>
           </ul>
-        </div>
-        <div class="service-card">
+        </article>
+
+        <article class="service-card">
           <i class="fas fa-cogs"></i>
-          <h3>Fleet Management & Supply Chain Support</h3>
+          <h3>Fleet Management</h3>
           <ul>
-            <li>Fuel management, safety monitoring, and delivery verification.</li>
-            <li>Advisory services on logistics efficiency for small businesses.</li>
+            <li>Fuel, safety & delivery monitoring</li>
+            <li>Supply chain advisory services</li>
           </ul>
-        </div>
-        <div class="service-card">
+        </article>
+
+        <article class="service-card">
           <i class="fas fa-map-marked-alt"></i>
           <h3>Logistics Coordination</h3>
           <ul>
-            <li>Route optimization, scheduling, and goods tracking.</li>
-            <li>Partner logistics for industrial and retail clients.</li>
+            <li>Route optimization & scheduling</li>
+            <li>Partner logistics solutions</li>
           </ul>
-        </div>
+        </article>
       </div>
-      <div class="extra-image">
-        <img src="trailer.jpg" alt="Scania with tipper trailer" style="width:100%; border-radius:8px; margin-top:2rem;">
-      </div>
-      <img src="scania-front.jpg" alt="Our Scania G640 Fleet" class="fleet-img">
+
+      <img src="scania-truck.png" alt="Our Scania Fleet" class="fleet-img" loading="lazy">
     </div>
   </section>
 
   <!-- Vision, Mission, Values -->
   <section id="vision" class="vision">
     <div class="container">
+      <h2>Vision & Values</h2>
+
       <div class="vision-grid">
-        <div class="vision-card">
-          <h3>Mission Statement</h3>
-          <p>To move goods efficiently and safely while building trust, reliability, and long-term partnerships in every route we travel.</p>
-        </div>
-        <div class="vision-card">
+        <article class="vision-card">
+          <h3>Mission</h3>
+          <p>To deliver goods safely and build long-term trust in every route.</p>
+        </article>
+
+        <article class="vision-card">
           <h3>Vision</h3>
-          <p>To establish Heron as a modern, technology-driven logistics company that connects businesses across Botswana and the region with seamless transport solutions.</p>
-        </div>
-        <div class="vision-card">
-          <img src="fleet-row.jpg" alt="Heron modern fleet" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+          <p>To be a leading tech-driven logistics company in Southern Africa.</p>
+        </article>
+
+        <article class="vision-card">
           <h3>Core Values</h3>
           <ul>
-            <li><i class="fas fa-check"></i> Reliability</li>
-            <li><i class="fas fa-check"></i> Integrity</li>
-            <li><i class="fas fa-check"></i> Safety</li>
-            <li><i class="fas fa-check"></i> Innovation</li>
-            <li><i class="fas fa-check"></i> Growth</li>
+            <li>Reliability</li>
+            <li>Integrity</li>
+            <li>Safety</li>
+            <li>Innovation</li>
+            <li>Growth</li>
           </ul>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Team Section -->
+  <!-- Team -->
   <section id="team" class="team">
     <div class="container">
-      <h2>Management Structure</h2>
+      <h2>Management Team</h2>
+
       <div class="team-grid">
-        <div class="team-member">
-          <img src="team1.jpg" alt="Mr. Max Westphal">
+        <article class="team-member">
+          <img src="team1.jpg" alt="Mr. Max Westphal" loading="lazy">
           <h3>Mr. Max Westphal</h3>
           <p class="role">Managing Director</p>
-          <p>Responsible for overall operations, strategy, and client relations.</p>
-        </div>
-        <div class="team-member">
-          <img src="team2.jpg" alt="Mr. Glen Mokoka">
+        </article>
+
+        <article class="team-member">
+          <img src="team2.jpg" alt="Mr. Glen Mokoka" loading="lazy">
           <h3>Mr. Glen Mokoka</h3>
           <p class="role">Strategy & Development Manager</p>
-          <p>Oversees brand development, business growth, tender preparation, and digital transformation initiatives.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-<section class="fullwidth-image">
-  <img src="convoy-aerial.jpg" alt="Heron convoy – reliable transport across Southern Africa" style="width:100%; height:auto;">
-</section>
-  
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>Ready to move with Heron? Let's discuss your logistics needs.</p>
+
       <div class="contact-info">
         <p><i class="fas fa-map-marker-alt"></i> Letlhakane, Botswana</p>
         <p><i class="fas fa-phone"></i> (+267) 7279607</p>
-        <p><i class="fas fa-envelope"></i> info@heronlogistics.co.bw</p> <!-- Placeholder email -->
+        <p><i class="fas fa-envelope"></i> info@heronlogistics.co.bw</p>
       </div>
+
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
@@ -164,11 +168,13 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Heron Transportation & Logistics (Pty) Ltd. All rights reserved. | Registration: BW00009270828 | Privacy Policy | Terms of Service</p>
+      <p>&copy; 2025 Heron Transportation & Logistics. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+ 
 
 </html>
+
